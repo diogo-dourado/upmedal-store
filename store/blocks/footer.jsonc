@@ -4,23 +4,52 @@
   },
   "footer-layout.desktop": { 
     "children": [
-      "flex-layout.row#footer"
+      "sticky-layout#footer"
     ]
   },
+  "sticky-layout#footer": {
+    "props": {
+      "blockClass": "sticky-footer"
+    },
+    "children": ["flex-layout.row#footer"]
+  },
+  "flex-layout.row#footer": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "header"
+    },
+    //Componentes do footer
+    "children": [
+      "login",
+      "rich-text#texto",
+      "logo#suporte"
+    ]
+  },
+
   "footer-layout.mobile": { 
     "children": [
       "flex-layout.row#footer"
     ]
   },
-  "flex-layout.row#footer": { 
-    "children": [
-      "image"
-    ]
-  },
-  "image": {
+
+  "rich-text#texto": {
     "props": {
-      "width": 100,
-      "src": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg"
+      "text": "SUPORTE"
+    }
+  },
+  "logo#suporte": {
+    "props": {
+      "title": "SUPORTE",
+      "width": 40,
+      "height": 40,
+      "mobileWidth": 40,
+      "mobileHeight": 40,
+      "url": "https://www.revistarppsdobrasil.com.br/wp-content/uploads/2018/08/Whatsapp-icon.png",
+      "href": "https://api.whatsapp.com/send?l=pt-BR&phone=5511964335064&text=Para%20falar%20com%20a%20Gabi%F0%9F%91%B1%F0%9F%8F%BB%E2%80%8D%E2%99%80%EF%B8%8F%0A%0AClique%20enviar%F0%9F%91%89%0A%0A------------%0A*D%C3%BAvida%20sobre%3A*%20Etapa%20S%C3%A3o%20Jorge%20-%20Circuito%20Corinthians%0A*ID%3A*%2052292"
     }
   }
 }

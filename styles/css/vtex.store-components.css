@@ -1,0 +1,23 @@
+.searchBarContainer {
+    width: 770px;
+}
+.searchBarContainer :global(.vtex-input-prefix__group) {
+    border: none;
+    border-radius: 0;
+    border-bottom: thin solid white;
+}
+.searchBarContainer :global(.vtex-input__suffix) {
+    background: transparent;
+}
+.searchBarContainer :global(.vtex-styleguide-9-x-input) {
+    background: transparent;
+    color: #ffffff;
+}
+
+.imageElement {
+    border-radius: 20px;
+    background-color: #424242;
+    color: #dbe9fd;
+}
+
+

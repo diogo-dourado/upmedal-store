@@ -22,15 +22,17 @@
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "fullWidth": true
+      "fullWidth": true,
+      "blockClass": "header"
     },
+    //componentes do cabeçalho
     "children": [
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
       "search-bar",
-      "locale-switcher",
-      "login",
-      "minicart.v2"
+      "flex-layout.col#spacer",
+      "minicart.v2",
+      "flex-layout.col#spacer"
     ]
   },
   "flex-layout.col#spacer": {
@@ -47,11 +49,12 @@
   "logo": {
     "props": {
       "title": "Logo",
-      "href": "/",
-      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
-      "width": "80"
+      "url": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/upmedal.png",
+      "width": "150",
+      "href": "https://diogodsantos--hiringcoders2021.myvtex.com"
     }
   },
+  //cabeçalho para celulares
   "header-layout.mobile": {
     "children": ["sticky-layout#mobile"]
   },
